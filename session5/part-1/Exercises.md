@@ -28,21 +28,15 @@ $ mysql>
 3. Use SQL to create the following commands, and review the existing material.
 4. Provide an SQL script to list all the available databases.
 
-```sql
-?
-```
+$ show databases;
 
 5. Create a new database called `lab1_exercise_db`.
 
-```sql
-?
-```
+$ create database lab1_excercise_db;
 
 6. Select the `lab1_exercise_db` database as the current database to work.
 
-```sql
-?
-```
+$ use lab1_excercise_db;
 
 7. Create a new table called `planets`, following the next data and specifications.
 
@@ -62,15 +56,16 @@ $ mysql>
 
 8. Provide the SQL script to create the table.
 
-```sql
-?
-```
+create table planets(
+   planet_id varchar(30) primary key,
+   planet_name varchar(30),
+   planet_terrain varchar(30),
+   planet_size int(3)
+);
 
 9. Run a command to show the available tables.
 
-```
-?
-```
+$ show tables;
 
 10. Provide an SQL script to insert all the data into the `planets` table.
 
